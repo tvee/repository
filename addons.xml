@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.TVEE"
        name="TVEE"
-       version="1.0.5"
+       version="1.0.6"
        provider-name="TVEE">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

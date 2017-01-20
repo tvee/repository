@@ -1,3 +1,6 @@
+V1.0.6
+Fix Sebn
+
 V1.0.5
 Fix Sebn
 
