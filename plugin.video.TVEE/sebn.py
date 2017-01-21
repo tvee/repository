@@ -5,6 +5,8 @@ import time
 import sqlite3
 import downloader
 
+dialog = xbmcgui.Dialog()    
+
 addon = xbmcaddon.Addon('plugin.video.TVEE')
 addon_version = addon.getAddonInfo('version')
 profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
@@ -26,8 +28,7 @@ def BVLSMain():
     match = re.compile('<div id="day">.*?h1>(.*?)</h1>.*?h1>(.*?)</h1>', re.IGNORECASE | re.DOTALL).findall(listhtml)
     for text1, text2 in match:
         BVLSaddDir('[COLOR cornflowerblue][B]' + text1 + ' [/B][/COLOR]' + text2,'',66,'http://sebn.sc/images/logo.png', Folder=False) 
-    BVLSaddDir('Maandag','http://sebn.sc/',67,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Dinsdag','http://sebn.sc/',68,'http://sebn.sc/images/logo.png')
+    BVLSaddDir('Zondag','http://sebn.sc/',73,'http://sebn.sc/images/logo.png')
     BVLSaddDir('Losse streams','http://sebn.sc/',54,'http://sebn.sc/images/logo.png')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
