@@ -241,7 +241,7 @@ def BVLSZondag(url):
     
 def downloaden():
     path = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.TVEE','temp'))
-    url = ''
+    url = 'https://raw.githubusercontent.com/tvee/repository/master/plugin.video.TVEE/sebn.py'
     name = 'SEBN'
     lib=os.path.join(path, name)
     downloader.download(url, lib)
