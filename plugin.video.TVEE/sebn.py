@@ -5,7 +5,7 @@ import sqlite3
 import downloader
 
 def BVLSMain():
-    BVLSaddDir('Update bestand','http://sebn.sc/',80,'http://sebn.sc/images/logo.png')
+    BVLSaddDir('Update bestand','http://sebn.sc/',76,'http://sebn.sc/images/logo.png')
     listhtml = getHtml('http://www.welkedagishetvandaag.nl/','http://www.welkedagishetvandaag.nl/')
     match = re.compile('<div id="day">.*?h1>(.*?)</h1>.*?h1>(.*?)</h1>', re.IGNORECASE | re.DOTALL).findall(listhtml)
     for text1, text2 in match:
