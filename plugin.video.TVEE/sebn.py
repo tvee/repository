@@ -30,8 +30,6 @@ def BVLSMain():
     BVLSaddDir('Woensdag','http://sebn.sc/',69,'http://sebn.sc/images/logo.png')
     BVLSaddDir('Donderdag','http://sebn.sc/',70,'http://sebn.sc/images/logo.png')
     BVLSaddDir('Vrijdag','http://sebn.sc/',71,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Zaterdag','http://sebn.sc/',72,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Zondag','http://sebn.sc/',73,'http://sebn.sc/images/logo.png')
     BVLSaddDir('Losse streams','http://sebn.sc/',54,'http://sebn.sc/images/logo.png')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
