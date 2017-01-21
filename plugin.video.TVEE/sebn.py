@@ -269,7 +269,7 @@ def downloaden():
         dp = xbmcgui.DialogProgress()
         dp.create("TVEE","Downloaden gereed",'', '...')    
         dp.close()
-        dialog.ok("Het bestand is geupdate.", '')
+        dialog.ok("Het bestand is geupdate.", 'Herlaad SEBN.sc')
         
 def BVLSaddDir(name, url, mode, iconimage, page=None, channel=None, section=None, keyword='', Folder=True, fanart=None):
     if url.startswith("plugin://"):
