@@ -21,11 +21,13 @@ functions_dir = profile
 addon_handle = int(sys.argv[1])
 
 def BVLSMain():
-    BVLSaddDir('Update bestand','http://sebn.sc/',76,'http://sebn.sc/images/logo.png')
+    BVLSaddDir('[COLOR red][B]Update bestand[/B][/COLOR]','http://sebn.sc/',76,'http://sebn.sc/images/logo.png')
     listhtml = getHtml('http://www.welkedagishetvandaag.nl/','http://www.welkedagishetvandaag.nl/')
     match = re.compile('<div id="day">.*?h1>(.*?)</h1>.*?h1>(.*?)</h1>', re.IGNORECASE | re.DOTALL).findall(listhtml)
     for text1, text2 in match:
-        BVLSaddDir('[B]' + text1 + ' [/B]' + text2,'',66,'http://sebn.sc/images/logo.png', Folder=False) 
+        BVLSaddDir('[COLOR cornflowerblue][B]' + text1 + ' [/B][/COLOR]' + text2,'',66,'http://sebn.sc/images/logo.png', Folder=False) 
+    BVLSaddDir('Maandag','http://sebn.sc/',67,'http://sebn.sc/images/logo.png')
+    BVLSaddDir('Dinsdag','http://sebn.sc/',68,'http://sebn.sc/images/logo.png')
     BVLSaddDir('Losse streams','http://sebn.sc/',54,'http://sebn.sc/images/logo.png')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
@@ -260,6 +262,7 @@ def downloaden():
         dp = xbmcgui.DialogProgress()
         dp.create("TVEE","Downloaden gereed",'', '...')    
         dp.close()
+        dialog.ok("Het bestand is geupdate.", '')
         
 def BVLSaddDir(name, url, mode, iconimage, page=None, channel=None, section=None, keyword='', Folder=True, fanart=None):
     if url.startswith("plugin://"):
