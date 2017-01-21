@@ -17,6 +17,7 @@ history = os.path.join(profile, 'history')
 REV = os.path.join(profile, 'list_revision')
 icon = os.path.join(home, 'icon.png')
 FANART = os.path.join(home, 'fanart.jpg')
+fanart = os.path.join(home, 'fanart.jpg')
 source_file = os.path.join(profile, 'source_file')
 functions_dir = profile
 
@@ -60,13 +61,13 @@ def BVLSMaandag(url):
             title = tijd + ': '+ name
             xbmc.log(title)
             url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-            addDir(title,url,59,img , fanart,'','','','')
+            streamaddDir(title,url,59,img , fanart,'','','','')
             
             streams = re.compile('href="(.*?)".*?">(.*?)<', re.IGNORECASE | re.DOTALL).findall(wedstrijden)
             for url, name in streams:
                 streams = '[COLOR cornflowerblue]- ' + name + '[/COLOR]'
                 url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-                addDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
+                streamaddDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
     
 def BVLSDinsdag(url):
@@ -91,13 +92,13 @@ def BVLSDinsdag(url):
             title = tijd + ': '+ name
             xbmc.log(title)
             url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-            addDir(title,url,59,img , fanart,'','','','')
+            streamaddDir(title,url,59,img , fanart,'','','','')
             
             streams = re.compile('href="(.*?)".*?">(.*?)<', re.IGNORECASE | re.DOTALL).findall(wedstrijden)
             for url, name in streams:
                 streams = '[COLOR cornflowerblue]- ' + name + '[/COLOR]'
                 url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-                addDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
+                streamaddDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
     
 def BVLSWoensdag(url):
@@ -122,13 +123,13 @@ def BVLSWoensdag(url):
             title = tijd + ': '+ name
             xbmc.log(title)
             url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-            addDir(title,url,59,img , fanart,'','','','')
+            streamaddDir(title,url,59,img , fanart,'','','','')
             
             streams = re.compile('href="(.*?)".*?">(.*?)<', re.IGNORECASE | re.DOTALL).findall(wedstrijden)
             for url, name in streams:
                 streams = '[COLOR cornflowerblue]- ' + name + '[/COLOR]'
                 url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-                addDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
+                streamaddDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
     
 def BVLSDonderdag(url):
@@ -153,13 +154,13 @@ def BVLSDonderdag(url):
             title = tijd + ': '+ name
             xbmc.log(title)
             url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-            addDir(title,url,59,img , fanart,'','','','')
+            streamaddDir(title,url,59,img , fanart,'','','','')
             
             streams = re.compile('href="(.*?)".*?">(.*?)<', re.IGNORECASE | re.DOTALL).findall(wedstrijden)
             for url, name in streams:
                 streams = '[COLOR cornflowerblue]- ' + name + '[/COLOR]'
                 url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-                addDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
+                streamaddDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
     
 def BVLSVrijdag(url):
@@ -184,14 +185,14 @@ def BVLSVrijdag(url):
             title = tijd + ': '+ name
             xbmc.log(title)
             url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-            addDir(title,url,59,img , fanart,'','','','')
+            streamaddDir(title,url,59,img , fanart,'','','','')
             
             streams = re.compile('href="(.*?)".*?">(.*?)<', re.IGNORECASE | re.DOTALL).findall(wedstrijden)
             for url, name in streams:
                 streams = '[COLOR cornflowerblue]- ' + name + '[/COLOR]'
                 url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
                 xbmc.log(url)
-                addDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
+                streamaddDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
     
 def BVLSZaterdag(url):
@@ -216,13 +217,13 @@ def BVLSZaterdag(url):
             title = tijd + ': '+ name
             xbmc.log(title)
             url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-            addDir(title,url,59,img , fanart,'','','','')
+            streamaddDir(title,url,59,img , fanart,'','','','')
             
             streams = re.compile('href="(.*?)".*?">(.*?)<', re.IGNORECASE | re.DOTALL).findall(wedstrijden)
             for url, name in streams:
                 streams = '[COLOR cornflowerblue]- ' + name + '[/COLOR]'
                 url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-                addDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
+                streamaddDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
     
 def BVLSZondag(url):
@@ -247,13 +248,13 @@ def BVLSZondag(url):
             title = tijd + ': '+ name
             xbmc.log(title)
             url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-            addDir(title,url,59,img , fanart,'','','','')
+            streamaddDir(title,url,59,img , fanart,'','','','')
             
             streams = re.compile('href="(.*?)".*?">(.*?)<', re.IGNORECASE | re.DOTALL).findall(wedstrijden)
             for url, name in streams:
                 streams = '[COLOR cornflowerblue]- ' + name + '[/COLOR]'
                 url = 'plugin://plugin.video.SportsDevil/?mode=1&item=catcher%3dstreams%26url=http://sebn.sc/' + url
-                addDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
+                streamaddDir(streams,url,59,'http://sebn.sc/images/logo.png' , fanart,'','','','')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
     
     
@@ -313,3 +314,34 @@ def getHtml(url, referer=None, hdr=None, data=None):
     data = response.read()    
     response.close()
     return data
+
+def streamaddDir(name,url,mode,iconimage,fanart,description,genre,date,credits,showcontext=False):
+        
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&fanart="+urllib.quote_plus(fanart)
+        ok=True
+        if date == '':
+            date = None
+        else:
+            description += '\n\nDate: %s' %date
+        liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
+        liz.setInfo(type="Video", infoLabels={ "Title": name, "Plot": description, "Genre": genre, "dateadded": date, "credits": credits })
+        liz.setProperty("Fanart_Image", fanart)
+        if showcontext:
+            contextMenu = []
+            if showcontext == 'source':
+                if name in str(SOURCES):
+                    contextMenu.append(('Remove from Sources','XBMC.RunPlugin(%s?mode=8&name=%s)' %(sys.argv[0], urllib.quote_plus(name))))
+            elif showcontext == 'download':
+                contextMenu.append(('Download','XBMC.RunPlugin(%s?url=%s&mode=9&name=%s)'
+                                    %(sys.argv[0], urllib.quote_plus(url), urllib.quote_plus(name))))
+            elif showcontext == 'fav':
+                contextMenu.append(('Remove from Add-on Favorites','XBMC.RunPlugin(%s?mode=6&name=%s)'
+                                    %(sys.argv[0], urllib.quote_plus(name))))
+                                    
+            if not name in FAV:
+                contextMenu.append(('Add to Add-on Favorites','XBMC.RunPlugin(%s?mode=5&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
+                         %(sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url), urllib.quote_plus(iconimage), urllib.quote_plus(fanart), mode)))
+            liz.addContextMenuItems(contextMenu)
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+
+        return ok
