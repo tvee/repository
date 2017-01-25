@@ -22,3 +22,5 @@ plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http:
 plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://sebn.sc/sebn-11.php
 #EXTINF:-1,SEBN 12
 plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://sebn.sc/sebn-12.php
+#EXTINF:-1,SEBN 12
+plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://sebn.sc/sebn-12.php
