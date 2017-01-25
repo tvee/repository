@@ -1,5 +1,5 @@
-#EXTINF:-1,SEBN 1
-plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://sebn.sc/sebn-1.php
+#EXTINF:-1,Hesgoals
+plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.hesgoal.com/news/12887/FC_Utrecht_vs_SC_Cambuur.html
 #EXTINF:-1,SEBN 2
 plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://sebn.sc/sebn-2.php
 #EXTINF:-1,SEBN 3
