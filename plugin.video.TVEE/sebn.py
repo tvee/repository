@@ -24,18 +24,21 @@ functions_dir = profile
 addon_handle = int(sys.argv[1])
 
 def BVLSMain():
-    BVLSaddDir('[COLOR red][B]Update bestand[/B][/COLOR]','http://sebn.sc/',76,'http://sebn.sc/images/logo.png')
-    listhtml = getHtml('http://www.welkedagishetvandaag.nl/','http://www.welkedagishetvandaag.nl/')
-    match = re.compile('<div id="day">.*?h1>(.*?)</h1>.*?h1>(.*?)</h1>', re.IGNORECASE | re.DOTALL).findall(listhtml)
-    for text1, text2 in match:
-        BVLSaddDir('[COLOR cornflowerblue][B]' + text1 + ' [/B][/COLOR]' + text2,'',66,'http://sebn.sc/images/logo.png', Folder=False) 
-    BVLSaddDir('Maandag','http://sebn.sc/',67,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Dinsdag','http://sebn.sc/',68,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Woensdag','http://sebn.sc/',69,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Donderdag','http://sebn.sc/',70,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Vrijdag','http://sebn.sc/',71,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Zaterdag','http://sebn.sc/',72,'http://sebn.sc/images/logo.png')
-    BVLSaddDir('Zondag','http://sebn.sc/',73,'http://sebn.sc/images/logo.png')
+    BVLSaddDir('[COLOR red]Update bestand[/COLOR]','http://sebn.sc/',76,'http://sebn.sc/images/logo.png')
+    #listhtml = getHtml('http://www.welkedagishetvandaag.nl/','http://www.welkedagishetvandaag.nl/')
+    #match = re.compile('<div id="day">.*?h1>(.*?)</h1>.*?h1>(.*?)</h1>', re.IGNORECASE | re.DOTALL).findall(listhtml)
+    #for text1, text2 in match:
+    #    BVLSaddDir('[COLOR cornflowerblue][B]' + text1 + ' [/B][/COLOR]' + text2,'',66,'http://sebn.sc/images/logo.png', Folder=False) 
+    BVLSaddDir('[COLOR red][B]Het SEBN Schema werkt tijdelijk niet in[/B][/COLOR]','',66,'http://sebn.sc/images/logo.png', Folder=False)
+    BVLSaddDir('[COLOR red][B]TVEE. Kijk op sebn.sc voor het schema[/B][/COLOR]','',66,'http://sebn.sc/images/logo.png', Folder=False)
+    BVLSaddDir('[COLOR red][B]en gebruik de losse streams.[/B][/COLOR]','',66,'http://sebn.sc/images/logo.png', Folder=False) 
+    #BVLSaddDir('Maandag','http://sebn.sc/',67,'http://sebn.sc/images/logo.png')
+    #BVLSaddDir('Dinsdag','http://sebn.sc/',68,'http://sebn.sc/images/logo.png')
+    #BVLSaddDir('Woensdag','http://sebn.sc/',69,'http://sebn.sc/images/logo.png')
+    #BVLSaddDir('Donderdag','http://sebn.sc/',70,'http://sebn.sc/images/logo.png')
+    #BVLSaddDir('Vrijdag','http://sebn.sc/',71,'http://sebn.sc/images/logo.png')
+    #BVLSaddDir('Zaterdag','http://sebn.sc/',72,'http://sebn.sc/images/logo.png')
+    #BVLSaddDir('Zondag','http://sebn.sc/',73,'http://sebn.sc/images/logo.png')
     BVLSaddDir('Losse streams','http://sebn.sc/',54,'http://sebn.sc/images/logo.png')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
